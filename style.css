@@ -1,0 +1,330 @@
+:root {
+    --menuhidden: hidden;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    min-height: 75px;
+    height: 8%;
+    top: 0px;
+    background: #3E5B92;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    z-index: 9;
+}
+
+.header:hover {
+    background: #496BAD;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.30);
+}
+
+.body {
+    margin: 0 0;
+    overflow-x: hidden;
+    position: relative;
+    overflow-y: visible;
+    background: #EEFBFF;
+}
+
+.aside1 {
+    position: absolute;
+    width: 15%;
+    max-width: 200px;
+    height: 2048px;
+    left: 0px;
+    top: 8%;
+    background: rgb(37, 54, 86);
+    background: -webkit-linear-gradient(bottom, rgba(37, 54, 86, 1) 0%, rgba(1, 5, 52, 1) 100%);
+    background: -o-linear-gradient(bottom, rgba(37, 54, 86, 1) 0%, rgba(1, 5, 52, 1) 100%);
+    background: linear-gradient(to top, rgba(37, 54, 86, 1) 0%, rgba(1, 5, 52, 1) 100%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 4;
+}
+
+.aside2 {
+    position: absolute;
+    width: 15%;
+    max-width: 200px;
+    height: 2048px;
+    right: 0px;
+    top: 8%;
+    background: rgb(37, 54, 86);
+    background: -webkit-linear-gradient(bottom, rgba(37, 54, 86, 1) 0%, rgba(1, 5, 52, 1) 100%);
+    background: -o-linear-gradient(bottom, rgba(37, 54, 86, 1) 0%, rgba(1, 5, 52, 1) 100%);
+    background: linear-gradient(to top, rgba(37, 54, 86, 1) 0%, rgba(1, 5, 52, 1) 100%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 4;
+}
+
+@keyframes iconhover {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes iconimghover {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: -50%;
+    }
+}
+
+.iconimg {
+    position: relative;
+    left: 0px;
+    height: 100%;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.icontext {
+    position: relative;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    color: #E3E3E3;
+    margin: 0 0;
+    text-decoration-line: none;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    white-space: nowrap;
+    bottom: 70%;
+    opacity: 0;
+}
+
+.icon {
+    position: relative;
+    left: 15%;
+    height: 80%;
+    top: 10%;
+    bottom: 10%;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    width: 10%;
+    white-space: nowrap;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+@media (min-width:1060px) {
+
+    .header:hover > .icon > .icontext {
+        opacity: 1;
+        transition-delay: 0.4s;
+    }
+
+    .header:hover > .icon > .iconimg {
+        left: -50%;
+    }
+}
+
+.header:not(:hover) > .icon > .icontext {
+    opacity: 0;
+}
+
+.header:not(:hover) > .icon > .iconimg {
+    left: 0px;
+    transition-delay: 0.4s;
+}
+
+.navelement {
+    position: relative;
+    bottom: 45%;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 150%;
+    color: #E3E3E3;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 0;
+    text-decoration-line: none;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#navelementchosen {
+    font-weight: 700;
+    left: 30%;
+}
+
+#navelementmain {
+    left: 30%;
+}
+
+#navelementbio {
+    left: 40%;
+}
+
+#navelementoptics {
+    left: 35%;
+}
+
+#navelementnano {
+    left: 45%;
+}
+
+.navelement:hover {
+    text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.35);
+    color: white;
+}
+
+.main {
+    position: absolute;
+    margin: 0 0;
+    top: 8%;
+    left: 15%;
+    width: 70%;
+    height: 2048px;
+    padding: 0 0;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    background: #EEFBFF;
+}
+
+@media (min-width: 1333px) {
+    .main {
+        left: 200px;
+        width: calc(100% - 400px)
+    }
+}
+
+@media (max-height: 937px) {
+    .main {
+        top: 75px;
+    }
+}
+
+@media (max-width:1500px) {
+    .navelement {
+        font-size: 110%;
+    }
+}
+
+@media (max-width:1465px) {
+    .icontext {
+        flex-wrap: wrap;
+        white-space: normal;
+        top: -85%;
+        left: 20%;
+    }
+}
+
+@media (max-width:1060px) {
+    .navelement {
+        top: -25px;
+    }
+
+    #navelementbio {
+        left: -10%;
+        top: -45px;
+    }
+
+    #navelementnano {
+        left: 0;
+        top: -45px;
+    }
+}
+
+.footer {
+    background-color: #232323;
+    width: 100%;
+    position: absolute;
+    top: calc(2048px - 100px);
+    height: 100px;
+    margin: 0 0;
+    z-index: 10;
+    box-shadow: 8px 0px 8px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-height: 937px) {
+    .footer {
+        top: calc(2048px - 100px + 75px);
+    }
+}
+
+.footertext {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 150%;
+    color: #E3E3E3;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+    text-decoration-line: none;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.navmenu {
+    display: inline-block;
+    left: 80%;
+    position: absolute;
+    bottom: 10%;
+    height: 80%;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0);
+    border-style: hidden;
+    z-index: 11;
+}
+
+.navmenu > img {
+    height: 80%;
+}
+
+.navscreen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background: rgba(0, 0, 0, 0.8);
+    visibility: var(--menuhidden);
+}
+
+.navscreenclose {
+    right: 0;
+    position: fixed;
+    display: inline-block;
+    background-color: transparent;
+    border-style: hidden;
+}
+
+.navscreenclose > img {
+    height: 50px;
+}
+
+.navscreenlist {
+    display: flex;
+
+}
+
+@media (max-width:600px) {
+    .navelement {
+        visibility: hidden;
+        transition-duration: 0s;
+    }
+    .navmenu {
+        visibility: visible;
+    }
+    .aside1, .aside2 {
+        visibility: hidden;
+    }
+    .main {
+        width: 100%;
+        left: 0px;
+    }
+}

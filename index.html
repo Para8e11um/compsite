@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link href="style.css" rel=stylesheet>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway&family=Rubik+Pixels&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <script type=text/javascript>
+        function showmenu() {
+            document.documentElement.style.setProperty('--menuhidden', 'visible');
+        }
+
+    </script>
+    <script type="text/javascript">
+        function hidemenu() {
+            document.documentElement.style.setProperty('--menuhidden', 'hidden');
+        }
+
+    </script>
+</head>
+
+<body class="body">
+    <aside class="aside1"></aside>
+    <aside class="aside2"></aside>
+    <main class="main">
+
+    </main>
+    <header class="header">
+        <div class="icon">
+            <img src="icon.png" class="iconimg">
+            <p class="icontext">Компьютерные технологии</p>
+        </div>
+        <a class="navelement" href="#" id="navelementchosen">Главная</a>
+        <a class="navelement" href="#" id="navelementoptics">Оптические компьютеры</a>
+        <a class="navelement" href="#" id="navelementbio">Биокомпьютеры</a>
+        <a class="navelement" href="#" id="navelementnano">Нанокомпьютеры</a>
+        <button class="navmenu" type="button" onclick="showmenu()">
+            <img src="menu.png">
+        </button>
+    </header>
+    <div class="navscreen">
+        <button class="navscreenclose" type="button" onclick="hidemenu()">
+            <img src="close.png">
+            <div class="navscreenlist">
+                <a class="navscreenlistelement" href="#">Главная</a>
+                <a class="navscreenlistelement" href="#">Оптические компьютеры</a>
+                <a class="navscreenlistelement" href="#">Биокомпьютеры</a>
+                <a class="navscreenlistelement" href="#">Нанокомпьютеры</a>
+            </div>
+        </button>
+    </div>
+    <footer class="footer">
+        <p class="footertext">Автор - Дмитрий Патлин. 2023</p>
+    </footer>
+</body>
+
+</html>
