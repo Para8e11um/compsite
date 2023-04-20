@@ -291,6 +291,7 @@
     z-index: 15;
     background: rgba(0, 0, 0, 0.8);
     visibility: var(--menuhidden);
+    display: flex;
 }
 
 .navscreenclose {
@@ -307,7 +308,15 @@
 
 .navscreenlist {
     display: flex;
+    margin: auto;
+    justify-content:space-evenly;
+    flex-direction: column;
+    height: 100%;
+}
 
+.navscreenlistelement {
+    margin: auto;
+    display: inline-block;
 }
 
 @media (max-width:600px) or (min-height:1) {
