@@ -1,6 +1,7 @@
 :root {
     --menuhidden: hidden;
     --mobile: false;
+    --mainheight: 2048px;
 }
 
 .header {
@@ -178,7 +179,7 @@
     top: 8%;
     left: 15%;
     width: 70%;
-    height: 2048px;
+    height: var(--mainheight);
     padding: 0 0;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.8);
     z-index: 5;
@@ -191,12 +192,13 @@
 @media (max-width: 1120px) {
     .navelement {
         font-size: 110%;
+        bottom: -7%;
     }
 }
 
 @media (max-width: 825px) {
     .navbar {
-        bottom: 65%;
+        bottom: 75%;
     }
 }
 
@@ -225,18 +227,20 @@
 .footer {
     width: 100%;
     position: absolute;
-    top: calc(2048px - 100px);
+    top: calc(var(--mainheight) - 100px);
     height: 110px;
     margin: 0 0;
     z-index: 10;
     box-shadow: 8px 0px 8px rgba(0, 0, 0, 0.8);
     background: rgb(12,12,12);
     background: linear-gradient(180deg, rgba(12,12,12,1) 0%, rgba(0,0,0,1) 100%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 @media (max-height: 937px) {
     .footer {
-        top: calc(2048px - 100px + 75px);
+        top: calc(var(--mainheight) - 100px + 75px);
     }
 }
 
@@ -343,5 +347,8 @@
     }
     .main {
         border-width: 8px;
+    }
+    .footer {
+        height: 120px;
     }
 }
