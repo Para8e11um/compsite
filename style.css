@@ -338,4 +338,10 @@
         width: 100%;
         left: 0px;
     }
+    .header {
+        border-width: 2px;
+    }
+    .main {
+        border-width: 4px;
+    }
 }
