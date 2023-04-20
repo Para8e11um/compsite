@@ -185,7 +185,7 @@
     background: #2C2C2C;
     border-color: #8E8E8E;
     border-width: 2px;
-    border-style:dashed;
+    border-style: dashed;
 }
 
 @media (max-width: 1120px) {
@@ -339,9 +339,9 @@
         left: 0px;
     }
     .header {
-        border-width: 2px;
+        border-width: 4px;
     }
     .main {
-        border-width: 4px;
+        border-width: 8px;
     }
 }
