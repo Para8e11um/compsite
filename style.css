@@ -289,10 +289,11 @@
     display: inline-block;
     background-color: transparent;
     border-style: hidden;
+    height: 10%;
 }
 
 .navscreenclose > img {
-    height: 50px;
+    height: 100%;
 }
 
 .navscreenlist {
