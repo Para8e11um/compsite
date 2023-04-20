@@ -17,7 +17,7 @@
     z-index: 9;
     border-color: #8E8E8E;
     border-width: 1px;
-    border-style: groove;
+    border-style: solid;
 }
 
 .header:hover {
