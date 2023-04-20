@@ -312,7 +312,7 @@
 
 }
 
-@media (max-width:600px) {
+@media (max-width:600px) or (min-height:1100) {
     .navelement {
         visibility: hidden;
         transition-duration: 0s;
