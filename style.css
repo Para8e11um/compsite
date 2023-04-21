@@ -2,6 +2,8 @@
     --menuhidden: hidden;
     --mobile: false;
     --mainheight: 2048px;
+    --headingfontsize: 80px;
+    --maintextfontsize: 26px;
 }
 
 .header {
@@ -51,7 +53,7 @@
     position: absolute;
     width: 15%;
     max-width: 200px;
-    height: 2048px;
+    height: var(--mainheight);
     left: 0px;
     top: 8%;
     background: rgb(37, 54, 86);
@@ -65,7 +67,7 @@
     position: absolute;
     width: 15%;
     max-width: 200px;
-    height: 2048px;
+    height: var(--mainheight);
     right: 0px;
     top: 8%;
     background: rgb(80,80,80);
@@ -193,6 +195,9 @@
     .navelement {
         font-size: 110%;
         bottom: -7%;
+    }
+    :root {
+        --headingfontsize: 56px;
     }
 }
 
@@ -351,4 +356,30 @@
     .footer {
         height: 120px;
     }
+}
+
+.firstarticle {
+    position: relative;
+    top: 50px;
+    left: 10px;
+}
+
+.headingblocky {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: var(--headingfontsize);
+    color: #E3E3E3;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    text-align: center;
+}
+
+.maintext {
+    font-family: 'Raleway', sans-serif;
+    color: #E3E3E3;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    font-size: var(--maintextfontsize);
+    font-weight: 400;
+    margin: 20px;
 }
