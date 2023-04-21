@@ -383,3 +383,13 @@
     font-weight: 400;
     margin: 20px;
 }
+
+@media (min-resolution: 200dpi) and (min-width: 900px) {
+    .firstarticle {
+        top: 150px;
+    }
+    :root {
+        --maintextfontsize: 48px;
+        --headingfontsize: 100px;
+    }
+}
