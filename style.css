@@ -302,6 +302,11 @@
     flex-wrap: nowrap;
 }
 
+.imagetextsection > .maintext {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .mainimage {
     width: 30%;
     border: #8E8E8E;
@@ -324,6 +329,12 @@
     border-width: 4px;
     border-color: #424242;
     border-style: dashed;
+    transition-timing-function: ease-in-out;
+    transition: 0.5s;
+}
+
+.dashedborder:hover {
+    border-color: #616161;
 }
 
 @media (min-resolution: 200dpi) and (min-width: 900px) {
