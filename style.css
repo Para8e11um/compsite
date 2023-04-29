@@ -406,7 +406,8 @@
         border-width: 8px;
     }
     .footer {
-        height: 120px;
+        height: 150px;
+        width: calc(100% + 8px);
     }
     .mainimage {
         width: 80%;
