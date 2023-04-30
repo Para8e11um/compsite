@@ -272,7 +272,6 @@
 .firstarticle {
     position: relative;
     top: -30px;
-    left: 10px;
 }
 
 .headingblocky {
@@ -284,6 +283,7 @@
     transition-duration: 0.5s;
     text-align: center;
     text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.5);
+    background-color: var(--accentcolor);
 }
 
 .lesserheadingblocky {
@@ -295,6 +295,8 @@
     transition-duration: 0.5s;
     text-align: center;
     text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
+    
 }
 
 .maintext {
@@ -305,6 +307,7 @@
     font-size: var(--maintextfontsize);
     font-weight: 400;
     margin: 20px;
+    text-indent: 20px;
 }
 
 .accenttext {
