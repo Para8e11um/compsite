@@ -48,7 +48,7 @@
     overflow-x: hidden;
     position: relative;
     overflow-y: visible;
-    background: #393939;
+    background: rgb(10,10,10);
 }
 
 .aside1 {
