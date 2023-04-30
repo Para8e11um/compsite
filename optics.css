@@ -4,7 +4,7 @@
     --mainheight: 2048px;
     --headingfontsize: 80px;
     --maintextfontsize: 26px;
-    --accentcolor: #E38F8F;
+    --accentcolor: #FFF176;
     --maintop: 0px;
 }
 
@@ -385,10 +385,6 @@
 
 .dottedborder:hover {
     border-color: #616161;
-}
-
-.lastemptydiv {
-    height: 30px;
 }
 
 @media (max-height: 937px) {
