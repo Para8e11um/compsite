@@ -387,6 +387,10 @@
     border-color: #616161;
 }
 
+.lastemptydiv {
+    height: 60px;
+}
+
 @media (max-height: 937px) {
     .firstarticle {
         top: -30px;
