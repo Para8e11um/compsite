@@ -28,5 +28,6 @@ window.onresize = changeMainWidth;
 
 Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
     changeMainWidth();
-    document.documentElement.style.setProperty(`--headingspacing`, `normal`);
 });
+
+window.onload = document.documentElement.style.setProperty(`--headingspacing`, `normal`);
