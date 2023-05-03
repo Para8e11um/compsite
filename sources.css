@@ -527,3 +527,7 @@ li > a {
 li > a:visited {
     color: #9E9E9E;
 }
+
+html {
+    scroll-behavior: smooth;
+}
